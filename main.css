@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 .container {
-  padding: 0 100px 0 100px;
+  padding: 10px;
 }
 nav ul,
 .main-info-section {
@@ -20,6 +20,8 @@ body {
   /* background-color: #252627; */
   background-color: #fee140;
   background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%);
+  background-size: cover;
+  background-attachment: fixed;
 }
 header {
   display: flex;
@@ -35,7 +37,10 @@ header {
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
   );
+  /* background-size: cover;
+  background-attachment: fixed; */
 }
+
 header h1,
 header a,
 .text p,
@@ -47,7 +52,7 @@ header a,
 }
 li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 a {
   text-decoration: none;
@@ -58,16 +63,19 @@ a {
   bottom: 50%;
   transform: translateY(-50%);
 }
+
 .main-info-section {
-  height: calc(100vh - 81.6px);
+  height: 100vh;
 }
 .text {
-  margin-top: 120px;
+  margin-top: 20px;
+  /* text-align: center; */
 }
 .text h1 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: context-menu;
+  /* text-align: center; */
 }
 .text span {
   display: inline-block;
@@ -83,9 +91,9 @@ span.m-left {
   margin-left: -10px;
 }
 .text p {
-  letter-spacing: 3px;
-  word-spacing: 10px;
-  font-size: 0.8rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-size: 0.6rem;
 }
 .text a {
   padding: 12px 25px;
@@ -95,10 +103,11 @@ span.m-left {
   font-size: 0.8rem;
   letter-spacing: 2px;
   position: relative;
-  top: 80px;
+  top: 40px;
   overflow: hidden;
   transition: 0.5s;
   display: inline-block;
+  margin-left: 50px;
 }
 .text a:hover {
   color: #fff;
@@ -118,70 +127,60 @@ span.m-left {
   height: 100%;
 }
 .profile-image img {
-  width: 450px;
-  margin-top: 50px;
-  border-radius: 60%;
+  margin-left: 40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
   /* position: absolute; */
-  object-fit: cover;
-  border: none;
+  /* object-fit: cover;
+  border: none; */
+  /* margin-bottom: 10px; */
 }
 .about {
-  height: 100vh;
-  margin-top: 100px;
+  height: 60vh;
+  margin-top: 20px;
 }
 .about h1 {
-  font-size: 10rem;
+  font-size: 5rem;
+  text-align: center;
   z-index: 0;
   opacity: 0.1;
 }
 .about-me-info {
   margin-top: 5%;
-  max-width: 800px;
+  /* max-width: 200px; */
   /* background-color: #252627; */
   box-shadow: 0 0 1.2rem rgb(0, 0, 0, 0.25);
-  padding: 50px;
+  padding: 5px;
   position: relative;
-  top: -70px;
-  left: 30%;
+  /* top: -70px; */
+  left: 50%;
   /* right: 50px; */
   transform: translateX(-50%);
   z-index: 1;
 }
 .about-me-info p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #bebebe;
 }
-.about-me-info p:nth-child(2),
-.about-me-info p:last-child {
-  margin-top: 30px;
-}
-.about img {
-  width: 300px;
-  position: relative;
-  top: -300px;
-  left: calc(100% - 100%);
-  right: calc(100% - 100%);
-  transform: translateX(calc(-100% + 100%));
-}
 .skills {
-  height: 80vh;
+  height: 90vh;
 }
 .skills h1 {
-  text-align: right;
-  font-size: 10rem;
+  text-align: center;
+  font-size: 4rem;
   opacity: 0.1;
   /* z-index: 0; */
 }
-
 .skill {
-  margin-left: 40%;
-  width: 600px;
+  /* margin-left: 40%; */
+  width: 200px;
   color: white;
 }
 .skill li {
   position: relative;
   list-style: none;
-  margin: 50px 0;
+  margin: 60px 5px;
 }
 .skill li::before {
   content: "";
@@ -239,13 +238,260 @@ li.react:after {
   }
 }
 .contact {
-  margin-top: 18rem;
+  margin-top: 10%;
 }
 .contact h1 {
-  text-align: left;
-  font-size: 10rem;
+  text-align: center;
+  font-size: 5rem;
   opacity: 0.1;
 }
 .logo {
-  margin-left: 5%;
+  margin-left: 10px;
+}
+.logo img {
+  height: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 100px 0 100px;
+  }
+  nav ul,
+  .main-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body {
+    /* background-color: #252627; */
+    background-color: #fee140;
+    background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%);
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .navbar {
+    /* background-color: #181818; */
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+  header h1,
+  header a,
+  .text p,
+  .about h1,
+  .skills h1,
+  .contact h1 {
+    color: #707070;
+    font-weight: bold;
+  }
+  li {
+    list-style: none;
+    margin-left: 30px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+  }
+  .main-info-section {
+    height: calc(100vh - 81.6px);
+  }
+  .text {
+    margin-top: 120px;
+  }
+  .text h1 {
+    color: #fff;
+    font-size: 3rem;
+    cursor: context-menu;
+  }
+  .text span {
+    display: inline-block;
+  }
+  span:hover {
+    color: #48cfad;
+    transition: all 0.5s;
+  }
+  span.name {
+    color: #ed5565;
+  }
+  span.m-left {
+    margin-left: -10px;
+  }
+  .text p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 0.8rem;
+  }
+  .text a {
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid #ed5565;
+    color: #ed5565;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    transition: 0.5s;
+    display: inline-block;
+  }
+  .text a:hover {
+    color: #fff;
+  }
+  .text a::before {
+    content: "";
+    background-color: #ed5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .text a:hover::before {
+    height: 100%;
+  }
+  .profile-image img {
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    /* border-radius: 60%; */
+    object-fit: cover;
+    /* border: none; */
+  }
+  .about {
+    height: 100vh;
+    margin-top: 100px;
+  }
+  .about h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: 0.1;
+  }
+  .about-me-info {
+    margin-top: 5%;
+    max-width: 800px;
+    /* background-color: #252627; */
+    box-shadow: 0 0 1.2rem rgb(0, 0, 0, 0.25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left: 30%;
+    /* right: 50px; */
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .about-me-info p {
+    font-size: 1.3rem;
+    color: #bebebe;
+  }
+  /* .about-me-info p:nth-child(2),
+  .about-me-info p:last-child {
+    margin-top: 30px;
+  }
+  .about img {
+    width: 300px;
+    position: relative;
+    top: -300px;
+    left: calc(100% - 100%);
+    right: calc(100% - 100%);
+    transform: translateX(calc(-100% + 100%));
+  } */
+  .skills {
+    height: 80vh;
+  }
+  .skills h1 {
+    text-align: right;
+    font-size: 10rem;
+    opacity: 0.1;
+    /* z-index: 0; */
+  }
+
+  .skill {
+    margin-left: 40%;
+    width: 600px;
+    color: white;
+  }
+  .skill li {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+  }
+  .skill li::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(55, 126, 224, 0.5);
+    border-radius: 5px;
+  }
+  .skill li::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    width: 0;
+    height: 20px;
+    background-color: rgb(54, 126, 224, 5);
+    border-radius: 5px;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  li.html:after {
+    animation-name: html;
+  }
+  @keyframes html {
+    to {
+      width: 90%;
+    }
+  }
+  li.css:after {
+    animation-name: css;
+  }
+  @keyframes css {
+    to {
+      width: 70%;
+    }
+  }
+  li.js:after {
+    animation-name: js;
+  }
+  @keyframes js {
+    to {
+      width: 50%;
+    }
+  }
+  li.react:after {
+    animation-name: react;
+  }
+  @keyframes react {
+    to {
+      width: 0%;
+    }
+  }
+  .contact {
+    margin-top: 18rem;
+  }
+  .contact h1 {
+    text-align: left;
+    font-size: 10rem;
+    opacity: 0.1;
+  }
+  .logo {
+    margin-left: 5%;
+  }
 }
