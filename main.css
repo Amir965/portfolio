@@ -145,7 +145,7 @@ span.m-left {
   font-size: 5rem;
   text-align: center;
   z-index: 0;
-  opacity: 0.1;
+  /* opacity: 0.1; */
 }
 .about-me-info {
   margin-top: 5%;
@@ -162,7 +162,7 @@ span.m-left {
 }
 .about-me-info p {
   font-size: 1rem;
-  color: #bebebe;
+  color: royalblue;
 }
 .skills {
   height: 60vh;
@@ -170,7 +170,7 @@ span.m-left {
 .skills h1 {
   text-align: center;
   font-size: 4rem;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   /* z-index: 0; */
 }
 .skill {
@@ -245,10 +245,10 @@ li.react:after {
 .contact h1 {
   text-align: center;
   font-size: 5rem;
-  opacity: 0.1;
+  /* opacity: 0.1; */
 }
 .logo {
-  margin-left: 50px;
+  margin-left: 60px;
   /* margin-right: 30px; */
 }
 .logo img {
@@ -381,7 +381,7 @@ li.react:after {
     text-align: left;
     font-size: 10rem;
     z-index: 0;
-    opacity: 0.1;
+    /* opacity: 0.1; */
   }
   .about-me-info {
     margin-top: 5%;
@@ -398,7 +398,7 @@ li.react:after {
   }
   .about-me-info p {
     font-size: 1.3rem;
-    color: #bebebe;
+    color: royalblue;
   }
   /* .about-me-info p:nth-child(2),
   .about-me-info p:last-child {
@@ -418,7 +418,7 @@ li.react:after {
   .skills h1 {
     text-align: right;
     font-size: 10rem;
-    opacity: 0.1;
+    /* opacity: 0.1; */
     /* z-index: 0; */
   }
 
@@ -493,7 +493,7 @@ li.react:after {
   .contact h1 {
     text-align: left;
     font-size: 10rem;
-    opacity: 0.1;
+    /* opacity: 0.1; */
   }
   .logo img {
     height: 100px;
