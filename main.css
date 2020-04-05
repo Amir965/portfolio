@@ -107,7 +107,7 @@ span.m-left {
   overflow: hidden;
   transition: 0.5s;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 .text a:hover {
   color: #fff;
@@ -127,8 +127,8 @@ span.m-left {
   height: 100%;
 }
 .profile-image img {
-  margin-top: 20px;
-  margin-left: 10px;
+  /* margin-top: 20px; */
+  margin-left: 35px;
   width: 300px;
   height: 300px;
   border-radius: 100%;
@@ -138,8 +138,8 @@ span.m-left {
   /* margin-bottom: 10px; */
 }
 .about {
-  height: 60vh;
-  margin-top: 20px;
+  height: 40vh;
+  /* margin-top: 0px; */
 }
 .about h1 {
   font-size: 5rem;
@@ -165,7 +165,7 @@ span.m-left {
   color: #bebebe;
 }
 .skills {
-  height: 80vh;
+  height: 60vh;
 }
 .skills h1 {
   text-align: center;
@@ -189,7 +189,7 @@ span.m-left {
   position: absolute;
   top: calc(100% + 20px);
   left: 0;
-  width: 100%;
+  width: 180%;
   height: 20px;
   background-color: rgb(55, 126, 224, 0.5);
   border-radius: 5px;
@@ -378,6 +378,7 @@ li.react:after {
     margin-top: 100px;
   }
   .about h1 {
+    text-align: left;
     font-size: 10rem;
     z-index: 0;
     opacity: 0.1;
@@ -494,7 +495,11 @@ li.react:after {
     font-size: 10rem;
     opacity: 0.1;
   }
+  .logo img {
+    height: 100px;
+    /* width: 50px; */
+  }
   .logo {
-    margin-left: 5%;
+    margin-left: 4%;
   }
 }
